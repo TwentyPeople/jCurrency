@@ -34,7 +34,7 @@ public class Currency {
             System.exit(1);
         }
         // Codes
-        String[] codes = new String[] {"EUR", "USD", "GBP", "RMB"};
+        String[] codes = new String[] {"EUR", "USD", "GBP", "RMB", "JPY", "CAD", "AUD"};
 
         if (!Arrays.asList(codes).contains(args[1])) {
             System.out.println("Error: Unknown currency code: " + args[1]);
@@ -51,7 +51,7 @@ public class Currency {
         
         // Convert
         DecimalFormat df = new DecimalFormat("#.##");
-       System.out.println(args[0] + " " + args[1] + " = " + df.format(Double.parseDouble(args[0]) * MoneyType.valueOf(args[2]).am / MoneyType.valueOf(args[1]).am)
+       System.out.println(args[0] + " " + args[1] + " = " + df.format(Double.parseDouble(args[0]) * Currency.MoneyType.valueOf(args[2]).am / Currency.MoneyType.valueOf(args[1]).am)
                + " " + args[2]);
        
    

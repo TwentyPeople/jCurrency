@@ -1,7 +1,7 @@
 /*
  * jCurrency - Java Currency Converter
  * Made under the authority of TwentyPeople Europe.
- * Distributed by TwentyPeople Internet, through GitHub/unrar.
+ * Distributed by TwentyPeople International, through GitHub/unrar.
  * This program is open-source under the TwentyPeople Open License.
  * LICENSE (READ BEFORE EDITING!):
  * You're free to freely use, share and modify this program.
@@ -10,7 +10,7 @@
  * - CAN'T BE uploaded anywhere without the permission of TwentyPeople Europe.
  * - CAN BE uploaded to GitHub/unrar/Currency (Pull Request).
  * - CAN BE uploaded ANYWHERE if it's uploaded to GitHub/unrar/Currency.
- * For further information, visit our website (http://twentypeopleeurope.blogspot.com)
+ * For further information, visit our website (http://twentypeopleinternational.blogspot.com)
  * or e-mail us (alexskyandco@gmail.com).
  * 
  */
@@ -33,14 +33,11 @@ public class Currency {
             System.out.println("Usage: java Currency <number> <CODE ORIGIN> <CODE CONVERT>");
             System.exit(1);
         }
-        // Codes
-        String[] codes = new String[] {"EUR", "USD", "GBP", "RMB"};
-
-        if (!Arrays.asList(codes).contains(args[1])) {
+        if (!codeExists(args[1])) {
             System.out.println("Error: Unknown currency code: " + args[1]);
             System.exit(1);
         }
-        if (!Arrays.asList(codes).contains(args[2])) {
+        if (!codeExists(args[2])) {
             System.out.println("Error: Unknown currency code: " + args[2]);
             System.exit(2);
         }
@@ -51,7 +48,7 @@ public class Currency {
         
         // Convert
         DecimalFormat df = new DecimalFormat("#.##");
-       System.out.println(args[0] + " " + args[1] + " = " + df.format(Double.parseDouble(args[0]) * MoneyType.valueOf(args[2]).am / MoneyType.valueOf(args[1]).am)
+       System.out.println(args[0] + " " + args[1] + " = " + df.format(Double.parseDouble(args[0]) * Currency.MoneyType.valueOf(args[2]).am / Currency.MoneyType.valueOf(args[1]).am)
                + " " + args[2]);
        
    
@@ -69,5 +66,16 @@ public class Currency {
         MoneyType (double am) {
             this.am = am;
         }
+    }
+    
+    // Function to see if it's in the enum
+    public static boolean codeExists(String check) {
+
+        for (MoneyType c : MoneyType.values()) {
+            if (c.name().equals(check)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

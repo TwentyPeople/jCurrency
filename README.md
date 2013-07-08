@@ -1,6 +1,4 @@
-
-<!-- saved from url=(0054)https://raw.github.com/unrar/Currency/master/README.md -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><style type="text/css"></style></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">Currency Converter
+Currency Converter
 =================
 
 This is a very simple currency converter made with Java.
@@ -8,7 +6,7 @@ Made by Alexander Sky, under the authority of TwentyPeople Europe.
 
 ## Distribution ##
 
-This program is distributed by TwentyPeople Europe, and can be freely used, modified and shared.
+This program is distributed by TwentyPeople International, and can be freely used, modified and shared.
 The files available are:
 
 * a JAR file, ready for the usage (see below).
@@ -18,7 +16,7 @@ The files available are:
 
 The usage of this program, in its JAR form, is:
 
-    $ java -jar Currency.jar &lt;amount&gt; &lt;original currency&gt; &lt;conversion currency&gt;
+    $ java -jar Currency.jar <amount> <original currency> <conversion currency>
 
 For example, if you want to convert 30 Euros to Dollars, you'll use:
 
@@ -28,15 +26,16 @@ For example, if you want to convert 30 Euros to Dollars, you'll use:
 
 If you want to add more currencies to the program:
 
-* Add it to the `codes` array.
 * Add the value of ONE DOLLAR converted to your divise in the `MoneyType` enum: `CODE(value)`.
 
 ## Available currencies ##
 
-In the last version of Currency (v0.1), there are the following currencies available:
+In the last version of Currency (v0.2), there are the following currencies available:
 
 * USD
 * EUR
 * RMB
 * GBP
-</pre><div id="sbi_camera_button" class="sbi_search" style="left:0px;top:0px;position:absolute;width:29px;height:27px;border:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;z-index:2147483647;display:none;"></div></body></html>
+* CAD
+* AUD
+* JPY

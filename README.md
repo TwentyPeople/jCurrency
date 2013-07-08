@@ -1,6 +1,4 @@
-
-<!-- saved from url=(0054)https://raw.github.com/unrar/Currency/master/README.md -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><style type="text/css"></style></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">Currency Converter
+Currency Converter
 =================
 
 This is a very simple currency converter made with Java.
@@ -33,10 +31,12 @@ If you want to add more currencies to the program:
 
 ## Available currencies ##
 
-In the last version of Currency (v0.1), there are the following currencies available:
+In the last version of Currency (v0.2), there are the following currencies available:
 
 * USD
 * EUR
 * RMB
 * GBP
-</pre><div id="sbi_camera_button" class="sbi_search" style="left:0px;top:0px;position:absolute;width:29px;height:27px;border:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;z-index:2147483647;display:none;"></div></body></html>
+* CAD
+* AUD
+* JPY

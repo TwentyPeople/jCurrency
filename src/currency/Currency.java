@@ -14,6 +14,7 @@
  * or e-mail us (alexskyandco@gmail.com).
  * 
  */
+package currency;
 import java.util.*;
 import java.text.DecimalFormat;
 

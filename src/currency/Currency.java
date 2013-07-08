@@ -36,11 +36,11 @@ public class Currency {
         // Codes
         String[] codes = new String[] {"EUR", "USD", "GBP", "RMB", "JPY", "CAD", "AUD"};
 
-        if (!Arrays.asList(codes).contains(args[1])) {
+        if (!codeExists(args[1])) {
             System.out.println("Error: Unknown currency code: " + args[1]);
             System.exit(1);
         }
-        if (!Arrays.asList(codes).contains(args[2])) {
+        if (!codeExists(args[2])) {
             System.out.println("Error: Unknown currency code: " + args[2]);
             System.exit(2);
         }
@@ -69,5 +69,16 @@ public class Currency {
         MoneyType (double am) {
             this.am = am;
         }
+    }
+    
+    // Function to see if it's in the enum
+    public static boolean codeExists(String check) {
+
+        for (MoneyType c : MoneyType.values()) {
+            if (c.name().equals(check)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

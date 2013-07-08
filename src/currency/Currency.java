@@ -1,14 +1,26 @@
-package currency;
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * jCurrency - Java Currency Converter
+ * Made under the authority of TwentyPeople Europe.
+ * Distributed by TwentyPeople Internet, through GitHub/unrar.
+ * This program is open-source under the TwentyPeople Open License.
+ * LICENSE (READ BEFORE EDITING!):
+ * You're free to freely use, share and modify this program.
+ * All the modifications done to this program:
+ * - CAN BE freely used by the author of the modifications.
+ * - CAN'T BE uploaded anywhere without the permission of TwentyPeople Europe.
+ * - CAN BE uploaded to GitHub/unrar/Currency (Pull Request).
+ * - CAN BE uploaded ANYWHERE if it's uploaded to GitHub/unrar/Currency.
+ * For further information, visit our website (http://twentypeopleeurope.blogspot.com)
+ * or e-mail us (alexskyandco@gmail.com).
+ * 
  */
+package currency;
 import java.util.*;
 import java.text.DecimalFormat;
 
 /**
  *
- * @author Tomeu
+ * @author Alexander Sky
  */
 public class Currency {
 
@@ -44,13 +56,18 @@ public class Currency {
        
    
     }
-        //Enum
-       public enum MoneyType {
-           USD(1), RMB(6.13), EUR(0.78), GBP(0.67);
-           
-           public double am;
-           MoneyType (double am) {
-               this.am = am;
-           }
-       }
+    
+    //Enum
+    // Last update: 08/Jul./2013
+    // Last codes added: CAD, AUD, JPY
+    // Last update made by: Alexander Sky @ TwentyPeople Europe
+    
+    public enum MoneyType {
+        USD(1), RMB(6.13), EUR(0.78), GBP(0.67),
+        CAD(1.05), AUD(1.10), JPY(101.31);
+        public double am;
+        MoneyType (double am) {
+            this.am = am;
+        }
+    }
 }

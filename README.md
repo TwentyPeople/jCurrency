@@ -1,4 +1,5 @@
-# Currency Converter # 
+Currency Converter
+=================
 
 This is a very simple currency converter made with Java.
 Made by Alexander Sky, under the authority of TwentyPeople Europe.

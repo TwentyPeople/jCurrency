@@ -33,9 +33,6 @@ public class Currency {
             System.out.println("Usage: java Currency <number> <CODE ORIGIN> <CODE CONVERT>");
             System.exit(1);
         }
-        // Codes
-        String[] codes = new String[] {"EUR", "USD", "GBP", "RMB", "JPY", "CAD", "AUD"};
-
         if (!codeExists(args[1])) {
             System.out.println("Error: Unknown currency code: " + args[1]);
             System.exit(1);

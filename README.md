@@ -26,7 +26,6 @@ For example, if you want to convert 30 Euros to Dollars, you'll use:
 
 If you want to add more currencies to the program:
 
-* Add it to the `codes` array.
 * Add the value of ONE DOLLAR converted to your divise in the `MoneyType` enum: `CODE(value)`.
 
 ## Available currencies ##

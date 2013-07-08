@@ -1,7 +1,7 @@
 /*
  * jCurrency - Java Currency Converter
  * Made under the authority of TwentyPeople Europe.
- * Distributed by TwentyPeople Internet, through GitHub/unrar.
+ * Distributed by TwentyPeople International, through GitHub/unrar.
  * This program is open-source under the TwentyPeople Open License.
  * LICENSE (READ BEFORE EDITING!):
  * You're free to freely use, share and modify this program.
@@ -10,7 +10,7 @@
  * - CAN'T BE uploaded anywhere without the permission of TwentyPeople Europe.
  * - CAN BE uploaded to GitHub/unrar/Currency (Pull Request).
  * - CAN BE uploaded ANYWHERE if it's uploaded to GitHub/unrar/Currency.
- * For further information, visit our website (http://twentypeopleeurope.blogspot.com)
+ * For further information, visit our website (http://twentypeopleinternational.blogspot.com)
  * or e-mail us (alexskyandco@gmail.com).
  * 
  */

@@ -6,7 +6,7 @@ Made by Alexander Sky, under the authority of TwentyPeople Europe.
 
 ## Distribution ##
 
-This program is distributed by TwentyPeople Europe, and can be freely used, modified and shared.
+This program is distributed by TwentyPeople International, and can be freely used, modified and shared.
 The files available are:
 
 * a JAR file, ready for the usage (see below).
@@ -16,7 +16,7 @@ The files available are:
 
 The usage of this program, in its JAR form, is:
 
-    $ java -jar Currency.jar &lt;amount&gt; &lt;original currency&gt; &lt;conversion currency&gt;
+    $ java -jar Currency.jar <amount> <original currency> <conversion currency>
 
 For example, if you want to convert 30 Euros to Dollars, you'll use:
 

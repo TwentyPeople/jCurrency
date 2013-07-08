@@ -1,4 +1,7 @@
-# Currency Converter # 
+
+<!-- saved from url=(0054)https://raw.github.com/unrar/Currency/master/README.md -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><style type="text/css"></style></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">Currency Converter
+=================
 
 This is a very simple currency converter made with Java.
 Made by Alexander Sky, under the authority of TwentyPeople Europe.
@@ -15,7 +18,7 @@ The files available are:
 
 The usage of this program, in its JAR form, is:
 
-    $ java -jar Currency.jar <amount> <original currency> <conversion currency>
+    $ java -jar Currency.jar &lt;amount&gt; &lt;original currency&gt; &lt;conversion currency&gt;
 
 For example, if you want to convert 30 Euros to Dollars, you'll use:
 
@@ -36,3 +39,4 @@ In the last version of Currency (v0.1), there are the following currencies avail
 * EUR
 * RMB
 * GBP
+</pre><div id="sbi_camera_button" class="sbi_search" style="left:0px;top:0px;position:absolute;width:29px;height:27px;border:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;z-index:2147483647;display:none;"></div></body></html>

@@ -15,7 +15,6 @@
  * 
  */
 package currency;
-import java.util.*;
 import java.text.DecimalFormat;
 
 /**
@@ -30,7 +29,7 @@ public class Currency {
     public static void main(String[] args) {
         // TODO code application logic here
         if (args.length != 3) {
-            System.out.println("Usage: java Currency <number> <CODE ORIGIN> <CODE CONVERT>");
+            System.out.println("Usage: java -jar Currency.jar <number> <CODE ORIGIN> <CODE CONVERT>");
             System.exit(1);
         }
         if (!codeExists(args[1])) {
@@ -41,7 +40,7 @@ public class Currency {
             System.out.println("Error: Unknown currency code: " + args[2]);
             System.exit(2);
         }
-        if (args[1] == args[2]) {
+        if (args[1].equals(args[2])) {
             System.out.println("Error: Both currency codes are the same!");
             System.exit(3);
         }
